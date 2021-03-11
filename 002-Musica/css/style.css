@@ -1,0 +1,218 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bg-danger {
+    background-color: #128E89!important;
+}
+
+.bg-success {
+    background-color: #4cb8b3!important;
+}
+
+.bg-warning {
+    background-color: #76D3CF!important;
+}
+
+.bg-secondary {
+    background-color: #2D9B97!important;
+}
+
+
+/*Navegacion*/
+
+.fixed-top {
+    transition: all .3s ease;
+}
+
+.fixed-top.bg-success {
+    -webkit-box-shadow: 0px 5px 19px -5px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 5px 19px -5px rgba(0, 0, 0, 0.44);
+    box-shadow: 0px 5px 19px -5px rgba(0, 0, 0, 0.44);
+}
+
+.fixed-top .active {
+    background-color: #76D3CF!important;
+}
+
+.fixed-top .nav-link {
+    color: white!important;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.navbar-brand span {
+    font-weight: 700;
+}
+
+a.navbar-brand .text-light:hover {
+    color: white!important;
+}
+
+#navegacion-principal .container .nav-item a {
+    color: black!important;
+}
+
+#navegacion-principal .container .nav-item a:hover {
+    color: white!important;
+}
+
+
+/*Video header*/
+
+.embed-responsive {
+    position: relative;
+    background-image: url(../img/banda.jpg);
+    height: 50rem;
+    background-position: center center;
+}
+
+
+/* @media (min-width:992px) {
+    .embed-responsive {
+        background-image: unset;
+        height: auto;
+    }
+} */
+
+.embed-responsive::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a90329+0,000000+51,6b6b6b+100&0.7+0,0.7+100 */
+    /* background: -moz-linear-gradient(-45deg, #188882b3 0%, rgba(0, 0, 0, 0.7) 51%, rgba(107, 107, 107, 0.7) 100%); */
+    /* FF3.6-15 */
+    /* background: -webkit-linear-gradient(-45deg, rgba(169, 3, 41, 0.7) 0%, rgba(0, 0, 0, 0.7) 51%, rgba(107, 107, 107, 0.7) 100%); */
+    /* Chrome10-25,Safari5.1-6 */
+    /* background: linear-gradient(135deg, rgba(169, 3, 41, 0.7) 0%, rgba(0, 0, 0, 0.7) 51%, rgba(107, 107, 107, 0.7) 100%); */
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    /* filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b3a90329', endColorstr='#b36b6b6b', GradientType=1); */
+    /* IE6-9 fallback on horizontal gradient */
+    background: #4cb8c4;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4cb8c4, #3cd3ad);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4cb8c4, #3cd3ad);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.informacion-concierto {
+    position: absolute;
+    top: 20%;
+    z-index: 100;
+}
+
+@media (min-width:992px) {
+    .informacion-concierto {
+        top: 35%;
+    }
+}
+
+.informacion-concierto h1 {
+    font-size: 3rem;
+    line-height: 6rem;
+}
+
+@media (min-width:992px) {
+    .informacion-concierto h1 {
+        font-size: 4rem;
+        line-height: unset;
+    }
+}
+
+.informacion-concierto h1 span,
+.informacion-concierto p {
+    font-weight: 700;
+    -webkit-box-shadow: 0px 17px 24px -13px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 0px 17px 24px -13px rgba(0, 0, 0, 0.34);
+    box-shadow: 0px 17px 24px -13px rgba(0, 0, 0, 0.34);
+}
+
+.informacion-concierto p {
+    font-size: 2rem;
+}
+
+.informacion-concierto .text-dark,
+.sobre-festival .text-dark {
+    color: #76D3CF!important;
+    font-weight: 700;
+}
+
+
+/*Lineup*/
+
+.separador::after {
+    content: '';
+    display: block;
+    height: 120px;
+    width: 300px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 120px;
+    margin: 0 auto;
+}
+
+.rock::after {
+    background-image: url(../img/guitarra.png);
+}
+
+.dj::after {
+    background-image: url(../img/dj.png);
+}
+
+.horario.bg-warning li:nth-child(2n+1) {
+    background-color: #ADEBE9!important;
+}
+
+.horario.bg-success li:nth-child(2n+1) {
+    background-color: #3ca8a2!important;
+}
+
+
+/* Fecha*/
+
+.fecha {
+    font-size: 2.8rem;
+}
+
+.fecha span {
+    font-weight: 700;
+}
+
+.fecha span::before {
+    content: '-';
+}
+
+.fecha span:first-child::before {
+    display: none;
+}
+
+
+/* boletos*/
+
+.boletos .precio {
+    font-size: 2rem;
+}
+
+.boletos .active {
+    background-color: #2D9B97!important;
+    border-color: #2D9B97!important;
+}
+
+.list-group-item-success {
+    background-color: #4cb8b3!important;
+}
+
+.footer-sitio {
+    background-color: #4cb8b3!important;
+}
+
+hr {
+    border-top: 1px solid #f8f9fa;
+}
